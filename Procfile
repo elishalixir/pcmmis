@@ -1,0 +1,1 @@
+web: gunicorn mmis.wsgi --log-file -

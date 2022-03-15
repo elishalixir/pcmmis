@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import os.path
 import os
 import django_heroku
 import dj_database_url
@@ -35,7 +34,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
+    #'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,7 +131,7 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-JAZZMIN_SETTINGS = {
+"""JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
     "site_title": "Mercury Management Information System",
 
@@ -180,7 +179,7 @@ JAZZMIN_SETTINGS = {
         {"model": "UserData"},
 
         # App with dropdown menu to all its models pages (Permissions checked against models)
-        {"app": "UserData"},
+        {"app": "dpcmmis"},
     ],
 #############
     # Side Menu #
@@ -203,4 +202,4 @@ JAZZMIN_SETTINGS = {
 
 
 }
-JAZZMIN_SETTINGS["show_ui_builder"] = True
+JAZZMIN_SETTINGS["show_ui_builder"] = True"""

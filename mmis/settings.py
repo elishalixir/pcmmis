@@ -180,7 +180,7 @@ JAZZMIN_SETTINGS = {
         {"model": "UserData"},
 
         # App with dropdown menu to all its models pages (Permissions checked against models)
-        {"app": "dpcmmis"},
+        {"app": "UserData"},
     ],
 #############
     # Side Menu #
@@ -201,4 +201,6 @@ JAZZMIN_SETTINGS = {
     # List of apps (and/or models) to base side menu ordering off of (does not need to contain all apps/models)
     "order_with_respect_to": ["auth", "dpcmmis", "dpcmmis.author", "books.book"],
 
+
 }
+JAZZMIN_SETTINGS["show_ui_builder"] = True

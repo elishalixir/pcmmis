@@ -177,7 +177,7 @@ JAZZMIN_SETTINGS = {
         {"name": "Web Page", "url": "http://skaylasempire.com/", "new_window": True},
 
         # model admin to link to (Permissions checked against model)
-        {"model": "auth.User"},
+        {"model": "UserData"},
 
         # App with dropdown menu to all its models pages (Permissions checked against models)
         {"app": "dpcmmis"},

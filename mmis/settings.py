@@ -177,9 +177,28 @@ JAZZMIN_SETTINGS = {
         {"name": "Web Page", "url": "http://skaylasempire.com/", "new_window": True},
 
         # model admin to link to (Permissions checked against model)
-        {"model": "User Data"},
+        {"model": "UserData"},
 
         # App with dropdown menu to all its models pages (Permissions checked against models)
         {"app": "dpcmmis"},
     ],
+#############
+    # Side Menu #
+    #############
+
+    # Whether to display the side menu
+    "show_sidebar": True,
+
+    # Whether to aut expand the menu
+    "navigation_expanded": True,
+
+    # Hide these apps when generating side menu e.g (auth)
+    "hide_apps": [],
+
+    # Hide these models when generating side menu (e.g auth.user)
+    "hide_models": [],
+
+    # List of apps (and/or models) to base side menu ordering off of (does not need to contain all apps/models)
+    "order_with_respect_to": ["auth", "dpcmmis", "dpcmmis.author", "books.book"],
+
 }

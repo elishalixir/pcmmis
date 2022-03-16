@@ -34,14 +34,15 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    #'jazzmin',
+    'jazzmin',
+    'dpcmmis',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dpcmmis',
+
 ]
 
 MIDDLEWARE = [
@@ -131,7 +132,7 @@ django_heroku.settings(locals())
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-"""JAZZMIN_SETTINGS = {
+JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
     "site_title": "Mercury Management Information System",
 
@@ -202,4 +203,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 }
-JAZZMIN_SETTINGS["show_ui_builder"] = True"""
+JAZZMIN_SETTINGS["show_ui_builder"] = True

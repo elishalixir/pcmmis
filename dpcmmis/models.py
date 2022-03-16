@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class mmisdetail(models.Model):
+class dpcmmis(models.Model):
     Name_of_party = models.CharField(max_length=50)
     Industry = models.TextField(max_length=50)
     Date_on_which_its_instrument_of_ratification = models.DateTimeField(

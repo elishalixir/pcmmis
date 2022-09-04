@@ -1,0 +1,39 @@
+{% extends 'dpcmmis/base2.html' %}
+    {% block title %} contact {% endblock %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div style = "margin:80px">
+    <h1>Contact</h1>
+    <h4>Contact us directly if you have any questions</h4>
+    <p>
+        Please fill in the form appropriately. <br>
+        One of our staff will contact you directly as soon as possible.
+    </p>
+<!--        <form action="/contact/" method = 'Post'>-->
+<!--            {% csrf_token %}-->
+<!--            {{form.first_name|as_crispy_field}}-->
+<!--            {{form.email_address|as_crispy_field}}-->
+<!--            {{form.message|as_crispy_field}}-->
+<!--            <input type= "submit" value="submit">-->
+<!--        </form>-->
+    <form action="/contact/" method = 'Post'>
+            {% csrf_token %}
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+            {{form.first_name|as_crispy_field}}
+            </div>
+            <div class="col-lg-6 col-md-12">
+            {{form.email_address|as_crispy_field}}
+            </div>
+            <div class="row">
+            {{form.message|as_crispy_field}}
+                </div>
+        </div>
+            <input type= "submit" value="submit">
+        </form>
+
+</div>
+{% endblock %}
+

@@ -1,0 +1,29 @@
+{% extends 'dpcmmis/base3.html' %}
+
+
+    {% block title %} ASGM {% endblock %}
+
+{% load crispy_forms_tags %}
+<!--step 1 of multistep form starts here-->
+{% block content %}
+<form action="/Asgm/" method="POST">
+     <h3>Artisanal Small-Scale Gold Mining</h3>
+    {% csrf_token %}
+       {{form|crispy}}
+<!--    The 'button' could be replaced with 'input' without the closing tag-->
+</form>
+{%  endblock %}
+<!--step 1 of multistep form ends here-->
+
+<!--step 2 of multistep form starts here-->
+{% block content-two %}
+<form action="/Asgm/" method="POST">
+    <h3>Artisanal Small-Scale Gold Mining2</h3>
+
+    {% csrf_token %}
+       {{form2|crispy}}
+<!--    The 'button' could be replaced with 'input' without the closing tag-->
+</form>
+{%  endblock %}
+
+<!--step 2 ends here-->

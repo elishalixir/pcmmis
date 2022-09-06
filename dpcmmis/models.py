@@ -116,16 +116,16 @@ class EnvironmentAndHealth(models.Model):
 
 
 class ASGMElisha(models.Model):
-    one = models.CharField(max_length=3000, null=False)
-    two = models.CharField(max_length=3000, null=False)
-    three = models.CharField(max_length=3000, null=False)
-    four = models.CharField(max_length=3000, null=False)
-
-    class ASGMElisha(models.Model):
-        five = models.CharField(max_length=3000, null=False)
-        six = models.CharField(max_length=3000, null=False)
-        seven = models.CharField(max_length=3000, null=False)
-        eight = models.CharField(max_length=3000, null=False)
+    # one = models.CharField(max_length=3000, null=False)
+    # two = models.CharField(max_length=3000, null=False)
+    # three = models.CharField(max_length=3000, null=False)
+    # four = models.CharField(max_length=3000, null=False)
+    #
+    # class ASGMElisha(models.Model):
+    #     five = models.CharField(max_length=3000, null=False)
+    #     six = models.CharField(max_length=3000, null=False)
+    #     seven = models.CharField(max_length=3000, null=False)
+    #     eight = models.CharField(max_length=3000, null=False)
     class Meta:
         db_table = "ASGMElisha"
 

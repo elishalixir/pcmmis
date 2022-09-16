@@ -10,7 +10,12 @@
 <form action="/Asgm/" method="POST">
      <h3>Artisanal Small-Scale Gold Mining</h3>
     {% csrf_token %}
+    <!--    #ASGM normal-->
        {{form|crispy}}
+<!--    #ASGM normal-->
+    <h4>Education/Health Care Opportunity Questions </h4>
+<!--    #Education/Health Care opportunity questions-->
+    {{form3|crispy}}
 <!--    The 'button' could be replaced with 'input' without the closing tag-->
 </form>
 {%  endblock %}
@@ -20,6 +25,7 @@
 {% block content-two %}
 <form action="/Asgm/" method="POST">
     <h3>Artisanal Small-Scale Gold Mining2</h3>
+    <h4>Mining Site Environmental and Health Impact Questions</h4>
 
     {% csrf_token %}
        {{form2|crispy}}

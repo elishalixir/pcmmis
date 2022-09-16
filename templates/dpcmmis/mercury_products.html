@@ -1,0 +1,318 @@
+{% extends 'dpcmmis/base3.html' %}
+
+{% block title%} mercury added products {% endblock %}
+
+{% block heading %}
+{% load crispy_forms_tags %}
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <form action="/mercury_added_products/" method="POST">
+          <h3> MERCURY ADDED PRODUCTS </h3>
+<h4>DOMESTIC PRODUCTION, PROCESSING AND IMPORT OF PRODUCTS WITH INTENTIONAL MERCURY USE</h4>
+              {% csrf_token %}
+
+      <table summary="This table shows how to create responsive tables using Datatables' extended functionality" class="table table-bordered table-hover dt-responsive">
+        <thead>
+          <tr>
+            <th> Production/ Import of<br> chemicals </th>
+            <th> Produced/ imported<br>(indicate country of import)</th>
+            <th> Annual Consumption/Production</th>
+            <th> Year for data provided</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Chlor-alkali production <br> with mercury-cells </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+             <td> VCM production with<br> mercury catalyst </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+             <td> Acetaldehyde production<br> with mercury catalyst </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+                    <tr>
+              <th> Production of products with mercury content </th>
+           </tr>
+          <tr>
+            <td>Hg thermometers (medical, air, <br>lab, industrial etc.) </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+          <tr>
+            <td>Electrical switches and<br> relays with mercury  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td> Light sources with mercury<br> (fluorescent, compact, others:<br> see guideline)  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+         <tr>
+           <td> Batteries with mercury  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+         <tr>
+             <td> Manometers and gauges<br> with mercury  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+
+        <tr>
+            <td> Biocides and pesticides<br> with mercury  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+          <tr>
+           <td> Paints with mercury  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+          <tr>
+           <td> Skin lightening creams<br> and soaps with<br> mercury chemicals  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+
+        </tbody>
+        <tfoot>
+
+     </tfoot>
+      </table>
+<!--        <button type="submit" class="btn btn-success" value="submit"> submit </button>-->
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+<!--The first table ends here-->
+
+
+<!--The second table and sentence questions starts here-->
+
+
+                {% block content-two %}
+<!--Table starts here-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <form action="/mercury_added_products/" method="POST">
+          <h3> MERCURY ADDED PRODUCTS </h3>
+<h4>GENERAL CONSUMPTION OF MERCURY IN PRODUCTS, AS METAL MERCURY AND AS MERCURY CONTAINING SUBSTANCES</h4>
+              {% csrf_token %}
+
+      <table summary="This table shows how to create responsive tables using Datatables' extended functionality" class="table table-bordered table-hover dt-responsive">
+        <thead>
+          <tr>
+            <th> Use and disposal of products<br> with mercury content</th>
+            <th> Present Y/N</th>
+            <th> Annual Consumption/Production<br>(units)</th>
+            <th> Year for data provided</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Dental amalgam fillings ("silver" fillings) </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Number of inhabitants" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+             <td> Preparations of fillings at dentist clinics </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Number of inhabitants" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+             <td> Use - from fillings already in the mouth </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Number of inhabitants" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+                    <tr>
+            <td>Disposal (lost and extracted teeth) </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Number of dental personnel per 1000 inhab." oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+                    <tr>
+              <th> Thermometers </th>
+           </tr>
+          <tr>
+            <td>Medical Hg thermometers</td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Items sold/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+          <tr>
+            <td>Other glass Hg thermometers <br>(air, laboratory, dairy, etc.) </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Items sold/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td> Engine control Hg thermometers<br> and other large industrial/speciality<br> Hg thermometers</td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Items sold/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+         <tr>
+           <td>Electrical switches and relays with mercury</td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Items sold/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+                              <tr>
+              <th> Light Sources with Mercury </th>
+           </tr>
+         <tr>
+           <td>Fluorescent tubes (double end)</td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Items sold/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+
+         <tr>
+           <td>Compact fluorescent lamp<br> (CFL single end)</td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Items sold/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+         <tr>
+           <td>Other Hg containing light sources<br> (see guideline)</td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Items sold/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+                                        <tr>
+              <th> Batteries with mercury </th>
+           </tr>
+
+          <tr>
+           <td> Mercury oxide (button cells and other sizes);<br> also called mercury-zinc cells  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Batteries sold, t/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+                    <tr>
+           <td> Other button cells <br>(zinc-air, alkaline button cells, silver-oxide)  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Batteries sold, t/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+                    <tr>
+           <td> Polyurethane (PU, PUR) <br>produced with mercury catalyst  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Batteries sold, t/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+
+                            <tr>
+              <th> </th>
+           </tr>
+                    <tr>
+           <td> Paints with mercury preservatives  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Paints sold, t/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+
+                            <tr>
+              <th> </th>
+           </tr>
+                    <tr>
+           <td> Skin lightening creams and soaps<br> with mercury chemicals  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Cream or soap sold, t/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+
+                            <tr>
+              <th>  </th>
+           </tr>
+                    <tr>
+           <td> Medical blood pressure gauges<br> (mercury sphygmomanometers)  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Items sold, t/y" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+
+                            <tr>
+              <th>  </th>
+           </tr>
+                    <tr>
+           <td> Other manometers and gauges with mercury </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Number of inhabitants" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+                            <tr>
+              <th> </th>
+           </tr>
+                    <tr>
+           <td> Laboratory chemicals  </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Number of inhabitants" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+                  <tr>
+              <th>  </th>
+           </tr>
+          <tr>
+            <td> Other laboratory and medical<br> equipment with mercury </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder="Number of inhabitants" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+
+        </tbody>
+        <tfoot>
+
+     </tfoot>
+      </table>
+<!--        <button type="submit" class="btn btn-success" value="submit"> submit </button>-->
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!--Table ends here-->
+
+
+<!--Form sentence starts here-->
+<form action="/mercury_added_products/" method="POST">
+     <h3>Part 2</h3>
+    {% csrf_token %}
+       {{form2|crispy}}
+<!--    The 'button' could be replaced with 'input' without the closing tag-->
+</form>
+                {% endblock %}
+<!--All ends here-->

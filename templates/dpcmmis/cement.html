@@ -1,0 +1,153 @@
+{% extends 'dpcmmis/base3.html' %}
+
+{% block title%} CEMENT {% endblock %}
+
+{% block heading %}
+{% load crispy_forms_tags %}
+
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <form action="/cement/" method="POST">
+          <h3> CEMENT SECTOR </h3>
+<h6>Please provide us with and enter your data as requested in the table below.</h6>
+              {% csrf_token %}
+
+      <table summary="This table shows how to create responsive tables using Datatables' extended functionality" class="table table-bordered table-hover dt-responsive">
+        <thead>
+          <tr>
+            <th> Does your operation cover<br> any of the following<br> activities? </th>
+            <th> Yes or No </th>
+            <th> Requested data covering<br> your company's activity<br> in this country </th>
+            <th> Annual production/use </th>
+            <th> Year for data provided</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Cement Production </td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td> Tonnes cement produced per year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td> Cement Production in Nigeria</td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td> Tonnes cement produced per year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td> Cement Production/without co-incineration of waste </td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td> Tonnes cement produced per year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td><span>With no filters</span></td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td> Kg Hg/Year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td> <span>With filters an no filter dust recycling:</span> <br>Simple particle control (ESP / PS / FF)
+              <br>Optimized particle control <br>(FF+SNCR / FF+WS / ESP+FGD / optimized FF)</td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td>Kg Hg/Year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td>
+            <span>With filters and filter dust recycling *2:</span> <br>Simple particle control (ESP / PS / FF)
+              <br>Optimized particle control<br> (FF+SNCR / FF+WS / ESP+FGD / optimized FF)</td>
+            </td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td>Kg Hg/Year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+         <tr>
+           <td> <span>Cement Production/with <br>co-incineration of waste</span></td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td> Tonnes cement produced per year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+         <tr>
+            <td> <span>With no filters<br> with filters and no filter<br> dust recycling:</span> <br>Simple particle control (ESP / PS / FF)
+              <br>Optimized particle control <br>(FF+SNCR / FF+WS / ESP+FGD / optimized FF)</td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td>Kg Hg/Year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td>
+            <span>With filters and filter dust recycling *2:</span> <br>Simple particle control (ESP / PS / FF)
+              <br>Optimized particle control<br> (FF+SNCR / FF+WS / ESP+FGD / optimized FF)</td>
+            </td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td>Kg Hg/Year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+        <tr>
+            <td> Production of lime </td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td> Tonnes lime produced per year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td> Production of lime and<br> lightweight aggregates</td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td> Tonnes lime and <br>aggregates produced<br> per year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td> Production of light weight <br> aggregate using kiln </td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td>Tonnes lightweight<br> aggregate using kilns<br> produced per year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+                 <tr>
+            <td> Other minerals <br> materials </td>
+            <td><p><input placeholder="yes/no" oninput="this.className = ''" name="dd"></p></td>
+            <td> Tonnes other minerals <br>and materials<br> produced per year</td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+        </tbody>
+        <tfoot>
+
+     </tfoot>
+      </table>
+<!--        <button type="submit" class="btn btn-success" value="submit"> submit </button>-->
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+                {% block content-two %}
+<form action="/cement/" method="POST">
+     <h3>Part 2</h3>
+    {% csrf_token %}
+       {{form2|crispy}}
+<!--    The 'button' could be replaced with 'input' without the closing tag-->
+</form>
+                {% endblock %}
+

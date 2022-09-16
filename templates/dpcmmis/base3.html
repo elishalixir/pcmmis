@@ -472,10 +472,11 @@ a[href*="#followme"]::before {
                     <a href="/login">Login</a>
                 </div> </div>
             {% endif %}
-            <li><a href="#home">Cement Sector</a></li>
+            <li><a href="{% url 'cement' %}">Cement Sector</a></li>
             <li><a href="{% url 'health' %}">Environment and Health</a></li>
-            <li><a href="#EC&FP"> Energy Consumption and Fuel Production </a> </li>
-            <li><a href="#MAP"> Mercury Added Products </a> </li>
+            <li><a href="{% url 'energy' %}"> Energy Consumption and Fuel Production </a> </li>
+            <li><a href="{% url 'mercury_products' %}"> Mercury Added Products </a> </li>
+
             <li><a href="#Waste">Waste</a></li>
             <li><a href="{% url 'Asgm' %}">ASGM</a></li>
             <li><a href="#followme">Follow Us</a></li>
@@ -506,7 +507,7 @@ a[href*="#followme"]::before {
         </div>
     </div>
 
-    <form id="regForm" action="/Asgm/" method="POST">
+    <form id="regForm" action="/feedback/" method="POST">
         <!--    this is the container that adds the control button to the interior of the form-->
 <div>
         <div>

@@ -69,15 +69,6 @@ class Waste(models.Model):
         default='fill here')
 
 
-class ShippingThings(models.Model):
-    SHIPPING_DESTINATION_CHOICES = (
-        ('residential', "Residential"),
-        ('commercial', "Commercial"),
-    )
-
-    shipping = models.BooleanField()
-    shipping_destination = models.CharField(max_length=15, choices= SHIPPING_DESTINATION_CHOICES, blank=True)
-
 
 
 class EnvironmentAndHealth(models.Model):
@@ -116,16 +107,24 @@ class EnvironmentAndHealth(models.Model):
 
 
 class ASGMElisha(models.Model):
-    # one = models.CharField(max_length=3000, null=False)
-    # two = models.CharField(max_length=3000, null=False)
-    # three = models.CharField(max_length=3000, null=False)
-    # four = models.CharField(max_length=3000, null=False)
-    #
-    # class ASGMElisha(models.Model):
-    #     five = models.CharField(max_length=3000, null=False)
-    #     six = models.CharField(max_length=3000, null=False)
-    #     seven = models.CharField(max_length=3000, null=False)
-    #     eight = models.CharField(max_length=3000, null=False)
+    one = models.CharField(max_length=3000, null=False)
+    two = models.CharField(max_length=3000, null=False)
+    three = models.CharField(max_length=3000, null=False)
+    four = models.CharField(max_length=3000, null=False)
+    five = models.CharField(max_length=3000, null=False)
+    six = models.CharField(max_length=3000, null=False)
+    seven = models.CharField(max_length=3000, null=False)
+    eight = models.CharField(max_length=3000, null=False)
+    nine = models.CharField(max_length=3000, null=False)
+    ten = models.CharField(max_length=3000, null=False)
+    eleven = models.CharField(max_length=3000, null=False)
+    twelve = models.CharField(max_length=3000, null=False)
+
+    class ASGMElisha(models.Model):
+        five = models.CharField(max_length=3000, null=False)
+        six = models.CharField(max_length=3000, null=False)
+        seven = models.CharField(max_length=3000, null=False)
+        eight = models.CharField(max_length=3000, null=False)
     class Meta:
         db_table = "ASGMElisha"
 
@@ -147,3 +146,4 @@ class MercuryAddedProducts(models.Model):
     pass
     class Meta:
         db_table = "Mercury Added Products"
+

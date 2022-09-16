@@ -1,0 +1,123 @@
+{% extends 'dpcmmis/base3.html' %}
+
+{% block title%} ENERGY CONSUMPTION AND FUEL PRODUCTION {% endblock %}
+
+{% block heading %}
+{% load crispy_forms_tags %}
+
+
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <form action="/energy/" method="POST">
+          <h3> ENERGY CONSUMPTION AND FUEL PRODUCTION </h3>
+<h6>Please provide us with and enter your data as requested in the table below.</h6>
+              {% csrf_token %}
+
+      <table summary="This table shows how to create responsive tables using Datatables' extended functionality" class="table table-bordered table-hover dt-responsive">
+        <thead>
+          <tr>
+            <th> Energy Consumption </th>
+            <th> Produced/imported </th>
+            <th> Annual Consumption/Production </th>
+            <th> Year for data provided</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Coal combustion in large<br> power plants </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+             <td> Other coal uses </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+             <td> Combustion/use of petroleum<br> coke and heavy oil </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td>Combustion/use of diesel,<br> gasoil, petroleum, kerosene</td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+          <tr>
+            <td> Use of raw or pre-cleaned<br> natural gas </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+            <td> Use of pipeline gas<br> (consumer quality) </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+         <tr>
+           <td> Biomass fired power and heat<br> production </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+         <tr>
+             <td> Charcoal combustion </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+          </tr>
+          <tr>
+              <th> Fuel Production </th>
+           </tr>
+        <tr>
+            <td> Oil extraction </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+          <tr>
+           <td> Oil refining </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+          <tr>
+           <td> Extraction and processing of <br> natural gas </td>
+            <td><p><input placeholder=" " oninput="this.className = ''" name="dd"></p></td>
+            <td><p><input placeholder=" Ton/yr" oninput="this.className = ''" name="nn"></p></td>
+            <td><p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p></td>
+           </tr>
+
+        </tbody>
+        <tfoot>
+
+     </tfoot>
+      </table>
+<!--        <button type="submit" class="btn btn-success" value="submit"> submit </button>-->
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+                {% block content-two %}
+<form action="/energy/" method="POST">
+     <h3>Part 2</h3>
+    {% csrf_token %}
+       {{form2|crispy}}
+<!--    The 'button' could be replaced with 'input' without the closing tag-->
+</form>
+                {% endblock %}
+
